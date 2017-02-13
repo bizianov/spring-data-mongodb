@@ -12,7 +12,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
  */
 @Configuration
 @EnableMongoRepositories
-@ComponentScan(basePackages = "com.example")
+@ComponentScan
 public class AppConfig {
 
     @Bean

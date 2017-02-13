@@ -1,6 +1,5 @@
 package mongo;
 
-import com.example.AppConfig;
 import com.example.model.Person;
 import com.example.model.Project;
 import com.example.model.Technology;
@@ -26,7 +25,7 @@ import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
  * Created by slava23 on 2/9/2017.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {AppConfig.class, TestMongoConfig.class})
+@ContextConfiguration(classes = {TestMongoConfig.class})
 public class TestMongo {
 
     private static final Logger LOG = LoggerFactory.getLogger(TestMongo.class);

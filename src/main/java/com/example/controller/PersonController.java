@@ -33,4 +33,9 @@ public class PersonController {
     public List<Person> findByName(@PathVariable(value = "personName") String personName) {
         return service.findByName(personName);
     }
+
+    @RequestMapping("/findByTechnology/{technology}")
+    public List<Person> findByTechnology(@PathVariable(value = "technology") String technologyName) {
+        return service.findByTechnology(technologyName);
+    }
 }
